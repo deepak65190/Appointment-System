@@ -14,7 +14,7 @@ app.use(express.json());
 
 
 app.use('/api/users', userRoutes);
-//app.use('/api/appointments', appointmentRoutes);
+app.use('/api/appointments', appointmentRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, async(req,res) =>{
